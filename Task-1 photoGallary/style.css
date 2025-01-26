@@ -1,0 +1,76 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+@font-face{
+    font-family: ruby;
+    src: url(Gilroy-Regular.ttf);
+}
+html,
+body {
+    height: 100%;
+    width: 100%;
+    background-color:#ffffff;
+    
+}
+div{
+    
+    display: flex;
+    justify-content:center;
+    align-items: center;
+    flex-wrap: wrap;
+    column-width: 200px;
+    margin-top: 5px;
+}
+img{
+    height: 320px;
+    width: 400px;
+    border-radius: 13px;
+    border: 2px solid rgb(0, 0, 0);
+    box-shadow: 4px 7px 7px 0px #000000;
+    cursor: pointer;
+    margin: 10px;
+    transition: 400ms;
+    filter: grayscale(0.5);
+    filter: blur(1px);
+}
+img:hover{
+    filter: grayscale(0);
+    transform: scale(1.03);
+}
+nav{
+    display: flex;
+    align-items: center;
+    justify-content:space-between;
+    padding: 20px 30px;
+    border-bottom: 6px solid rgb(0, 0, 0);
+    border-width: 6px;
+}
+h1{
+   font-family: ruby;
+   font-size: 60px;
+   font-weight: 900;
+   color: rgb(0, 0, 0);
+
+}
+#menu{
+    display: flex;
+    align-items:center;
+    justify-content:space-between;
+    gap: 30px;
+
+}
+#menu a{
+    font-size: 20px;
+    text-decoration: none;
+    padding: 20px 10px;
+    color: #000000;
+   font-family: ruby;
+   transition: 1s;
+}
+#menu a:hover{
+    color: #ffffff;
+    background-color: #000000;
+    border-radius: 10px;
+}
